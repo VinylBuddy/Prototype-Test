@@ -1,0 +1,5 @@
+Test                                Aktion                                      Erwartetes Ergebnis
+AT01 –  UI und BL     „Milch kaufen“ eingeben und hinzufügen        Aufgabe erscheint, Zähler steigt, Eingabe wird geleert
+AT02 –  UI und BL     Nur Leerzeichen eingeben und hinzufügen       Fehlermeldung erscheint, Liste bleibt leer
+BL01 –  Logik         Aufgabe mit äußeren Leerzeichen erstellen     Titel wird bereinigt
+BL02 –  Logik         Aufgabe ohne Inhalt erstellen                 Verständlicher Validierungsfehler
