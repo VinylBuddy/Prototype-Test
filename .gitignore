@@ -1,41 +1,69 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# Abhängigkeiten
 node_modules/
+.npm/
+.pnpm-store/
 
-# Expo
+# Expo und Builds
 .expo/
+expo-env.d.ts
 dist/
 web-build/
-expo-env.d.ts
 
-# Native
-.kotlin/
-*.orig.*
+# TypeScript und Caches
+*.tsbuildinfo
+.eslintcache
+.cache/
+.jest-cache/
+
+# Jest-Testausgaben
+coverage/
+.nyc_output/
+
+# Android
+/android/.gradle/
+/android/.kotlin/
+/android/local.properties
+/android/**/build/
+/android/**/.cxx/
+/android/**/.externalNativeBuild/
+*.apk
+*.aab
+
+# iOS
+/ios/Pods/
+/ios/build/
+/ios/DerivedData/
+/ios/.xcode.env.local
+**/xcuserdata/
+*.xcuserstate
+*.ipa
+*.dSYM/
+
+# Signierschlüssel
 *.jks
+*.keystore
+!**/debug.keystore
 *.p8
 *.p12
-*.key
 *.mobileprovision
 
-# Metro
-.metro-health-check*
+# Umgebungsvariablen
+.env
+.env.*
+!.env.example
+!.env.*.example
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
+# Logs und Editor-Dateien
+*.log
+.idea/
+*.iml
+*.swp
+*.swo
+*~
 .DS_Store
-*.pem
+Thumbs.db
+Desktop.ini
 
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
-# generated native folders
-/ios
-/android
+# Testnachweise für die Abgabe behalten
+!/reports/*.log
+!/evidence/**/console.log
