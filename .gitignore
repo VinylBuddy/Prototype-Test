@@ -67,3 +67,8 @@ Desktop.ini
 # Testnachweise für die Abgabe behalten
 !/reports/*.log
 !/evidence/**/console.log
+
+# Playwright: automatisch erzeugte Ergebnisse
+/test-results/
+/playwright-report/
+/blob-report/
